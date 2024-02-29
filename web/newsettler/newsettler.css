@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #ecebf7;
+}
+.banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin: 80px 0 0 0;
+  background-color: #362e76;
+}
+.headline {
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.paragraph-section {
+  margin-bottom: 40px;
+}
+.paragraph {
+  width: 88%;
+  margin: 40px 80px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 2.4px;
+  font-style: normal;
+  color: #58585b;
+  text-align: center;
+  text-transform: uppercase;
+}
+.span {
+  color: #573277;
+  font-weight: bolder;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#email {
+  width: 40%;
+  height: 50px;
+  padding: 10px;
+  background-color: #ecebf7;
+  border: none;
+  border-bottom: 1px solid #b6b0fd;
+  font-size: 16px;
+  font-family: "Lato";
+}
+#email:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b6b0fd;
+}
+button {
+  width: 15%;
+  height: 50px;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  color: #fff;
+  background-color: #362e76;
+  border-radius: 5px;
+  border: none;
+}
+.policy {
+  display: flex;
+  justify-content: center;
+}
+.po {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #58585b;
+  padding: 20px;
+  margin-top: 5px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  width: 58%;
+}
+
+@media (max-width: 1100px) {
+  .paragraph{
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    line-height: 32px;
+  }
+  
+}
+@media (max-width: 950px){
+  .paragraph{
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    margin-left: 40px;
+  }
+  #email{
+    letter-spacing: 1.4px;
+    font-size: 14px;
+    width: 40%;
+  }
+  button{
+    width: 20%;
+
+  }
+  .po{
+    font-size:12px ;
+    letter-spacing: 1.2px;
+    width: 68%;
+  }
+}
+@media (max-width: 700px){
+  .paragraph{
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    margin: 40px 32px;
+  }
+  .inputs{
+    flex-direction: column;
+  }
+  #email{
+    font-size: 12px;
+    width: 80%;
+  }
+  button{
+    width: 50%;
+  }
+  .po{
+    font-size: 9px;
+    letter-spacing: 0.9px;
+    width: 95%;
+  }
+
+}

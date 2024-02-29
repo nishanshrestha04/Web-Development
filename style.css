@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #ecebf7;
+}
+.main {
+  height: 100%;
+}
+
+.section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0px 0 100px 0;
+}
+.left {
+  width: 55%;
+  margin: 80px 80px;
+  padding: 100px 0;
+}
+.para {
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  color: #242424;
+}
+.right {
+  margin: 40px 80px;
+  padding: 100px 0;
+}
+.right > img {
+  width: 415px;
+  height: 305px;
+}
+.section-two{
+  margin-top: 200px
+}
+.container {
+  width: 90%;
+  height: 450px;
+  background-color: #f6f5fb;
+  margin: 40px 80px;
+  border-radius: 54px;
+  display: flex;
+}
+.left1 {
+  background-image: url("./image/ai-cloud-concept-with-robot-arm.jpg");
+  width: 60%;
+  border-radius: 32px;
+  height: 450px;
+  content: "";
+  background-position: center;
+  background-size: cover;
+}
+.right1 {
+  width: 34%;
+  height: 230px;
+  padding: 40px 35px;
+}
+.slogan {
+  font-size: 32px;
+  font-weight: 900;
+  color: #242424;
+}
+.desc {
+  font-size: 24px;
+  color: #6c6c6e;
+}
+.section-three {
+  margin: 40px 80px;
+}
+.news {
+  font-size: 48px;
+  letter-spacing: 4.8px;
+  font-weight: 500;
+  color: #242424;
+}
+#news {
+  display: flex;
+  margin-top: 40px;
+  gap: 32px;
+}
+.image {
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  
+}
+.author {
+  padding: 13px 0;
+}
+.author {
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  color: #553ef6;
+}
+.dec {
+  letter-spacing: 2.4px;
+  font-size: 24px;
+  color: #58585b;
+}
+.more{
+  background-color: #362E76;
+  width: 17%;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px 0 0 80px;
+  color: #fff;
+}
+.mores{
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  
+  text-transform: capitalize;
+  font-weight: 700;
+}
+/* media for 1200px */
+@media (max-width: 1200px) and (min-width: 675px) {
+  .right{
+    display: flex;
+    align-items: center;
+  }
+  .container{
+    margin: 40px auto;
+  }
+  #news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+
+}
+@media (max-width: 850px) {
+  .more{
+    width: 20%;
+  }
+}
+/* media fro 935px */
+@media (max-width: 935px){
+.container{
+  margin:100px auto;
+}
+.right1{
+  padding: 0 35px;
+}
+  .slogan{
+    font-size: 24px;
+    margin: 20px auto 0 auto;
+  }
+  .desc{
+  font-size: 18px;
+    color: #6c6c6e;
+    padding: 10px 0 0 0;
+    
+  }
+
+  .more {
+    font-size: 16px;
+    padding: 26px 16px;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+  }
+  
+}
+/* media for 1000px */
+@media (max-width: 1000px){
+  
+  .section-one {
+    flex-direction: column-reverse;
+  }
+  .left {
+    width: 85%;
+    margin: 50px 32px 0 32px;
+    padding: 50px 0;
+  }
+  .para {
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    color: #242424;
+  }
+  .right {
+    margin: 0px 86px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .right > img {
+    width: 260px;
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .left {
+    width: 85%;
+    margin: 50px 32px 0 32px;
+    padding:0;
+  }
+  .para {
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    color: #242424;
+  }
+  .right {
+    margin: 80px 86px 0 86px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .right > img {
+    width: 260px;
+    height: 175px;
+  }
+  .container {
+    width: 88%;
+    height: 500px;
+    background-color: #f6f5fb;
+    margin: 40px auto;
+    border-radius: 30px;
+    display: block;
+  }
+  .left1 {
+    background-image: url("./image/ai-cloud-concept-with-robot-arm.jpg");
+    width: 100%;
+    border-radius: 30px;
+    height: 290px;
+    content: "";
+    background-position: center;
+    background-size: cover;
+  }
+  .right1 {
+    width: 100%;
+    height: 135px;
+    padding: 16px 20px;
+  }
+  .slogan {
+    font-size: 23px;
+    font-weight: 900;
+    color: #242424;
+  }
+  .desc {
+    font-size: 18px;
+    color: #6c6c6e;
+    padding-top: 16px;
+  }
+  .section-three {
+    margin: 40px 32px;
+  }
+  .news {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    color: #242424;
+  }
+  #news {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+    gap: 32px;
+  }
+  .image {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px; 
+  }
+  .author {
+    padding: 13px 0;
+  }
+  .author {
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    color: #553ef6;
+  }
+  .dec {
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    color: #58585b;
+  }
+  .more{
+    width: 40%;
+    margin-left: 35px;
+    height: 20px;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .container {
+    width: 88%;
+    height: 450px;
+    background-color: #f6f5fb;
+    margin: 40px auto;
+    border-radius: 30px;
+    display: block;
+  }
+  .left1 {
+    background-image: url("./image/ai-cloud-concept-with-robot-arm.jpg");
+    width: 100%;
+    border-radius: 30px;
+    height: 290px;
+    content: "";
+    background-position: center;
+    background-size: cover;
+  }
+  .right1 {
+    width: 100%;
+    height: 135px;
+    padding: 16px 20px;
+  }
+  .slogan {
+    font-size: 18px;
+    font-weight: 900;
+    color: #242424;
+  }
+  .desc {
+    font-size: 12px;
+    color: #6c6c6e;
+    padding-top: 16px;
+  }
+
+}
+@media (max-width: 1300px) {
+  .para{
+    font-size: 32px;
+  }
+  img{
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  .para{
+    font-size: 26px;
+  }
+  .right >img{
+    margin-top: 10px;
+    height: 250px;
+    width: 350px
+  }
+}
